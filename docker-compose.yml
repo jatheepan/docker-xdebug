@@ -1,0 +1,8 @@
+version: "3"
+services:
+  app:
+    build: .
+    container_name: awesome_app
+    volumes:
+      - ./app:/home/app
+    command: php /home/app/index.php
