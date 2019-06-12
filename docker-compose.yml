@@ -4,5 +4,6 @@ services:
     build: .
     container_name: awesome_app
     volumes:
-      - ./app:/home/app
-    command: php /home/app/index.php
+      - ./app:/var/www/html
+    ports:
+      - 80:80
